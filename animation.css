@@ -340,13 +340,14 @@
     }
     .container-square .square .contant button
     {
-        position: relative;
+        position: absolute;
         display: inline-block;
         margin-top: 10px;
         border: 2px solid #fff;
         padding: 6px 12px;
         text-decoration: none;
         color: #fff;
+        bottom: 1%;
     }
     .container-square .square span
     {
