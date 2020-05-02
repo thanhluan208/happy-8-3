@@ -1,0 +1,436 @@
+@media only screen and (min-width:641px)
+{
+    section
+    {
+        background:linear-gradient(-45deg,#23a6d5,#23a6d5,#45a38b,#bff2e5);
+        background-size: 400%,400%;
+        animation: gradient 6s ease-in-out infinite;
+        box-sizing: border-box;
+    }
+    @keyframes gradient {
+        0%
+        {
+            background-position:0 50%;
+        }
+        50%
+        {
+            background-position: 100% 50%;
+        }
+        100%
+        {
+            background-position: 0 50%;
+        }
+    }
+    .container-square
+    {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+        grid-template-rows: minmax(50px,auto);
+        grid-gap: 125px;
+    }
+    .container-square .square 
+    {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        width: 350px;
+    }
+    .container-square .square .contant
+    {
+        position: relative;
+        padding: 30px 40px;
+        color: #fff;
+        text-align: center;
+        transition: 0.5;
+        z-index: 10;
+    }
+    .container-square .square .contant button 
+    {
+        background: none;
+        color: #ccc;
+        transition: .6s;
+        height: 40px;
+        width: 150px;
+        border: 1px solid ;
+        font-size: 18px;
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 40px;
+    }
+    .container-square .square .contant button:hover 
+    {
+        color: #fff;
+        box-shadow: -15px 0 50px;
+    }
+    .container-square .square:nth-child(1) .contant button:before 
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        background: rgba(022, 20, 152, 0);
+        filter: blur(5px);
+        transition: 5s;
+        z-index: -1;
+    }
+    .container-square .square:nth-child(1) .contant button:hover:before 
+    {
+        background: rgba(022, 20, 152, 1);
+        transform: scaleX(5);
+    }
+    .container-square .square:nth-child(1) .contant button:after
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        background: rgba(6, 2, 250, 0);
+        filter: blur(5px);
+        transition: 2s;
+        z-index: -1;
+    }
+    .container-square .square:nth-child(1) .contant button:hover:after 
+    {
+        background: rgb(2, 1, 82);
+        transform: scaleX(5);
+    }
+    .container-square .square:nth-child(2) .contant button:before 
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        background: rgba(122, 16, 48, 0);
+        filter: blur(5px);
+        transition: 5s;
+        z-index: -1;
+    }
+    .container-square .square:nth-child(2) .contant button:hover:before 
+    {
+        background: rgb(179, 1, 54);
+        transform: scaleX(5);
+    }
+    .container-square .square:nth-child(2) .contant button:after
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        background: rgba(87, 2, 27, 0);
+        filter: blur(5px);
+        transition: 2s;
+        z-index: -1;
+    }
+    .container-square .square:nth-child(2) .contant button:hover:after 
+    {
+        background: rgb(78, 0, 26);
+        transform: scaleX(5);
+    }
+    .container-square .square:nth-child(3) .contant button:before 
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        background: rgba(234, 0, 255, 0);
+        filter: blur(5px);
+        transition: 5s;
+        z-index: -1;
+    }
+    .container-square .square:nth-child(3) .contant button:hover:before 
+    {
+        background: rgba(234, 0, 255, 1);
+        transform: scaleX(5);
+    }
+    .container-square .square:nth-child(3) .contant button:after
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        background: rgba(83, 0, 63, 0);
+        filter: blur(5px);
+        transition: 2s;
+        z-index: -1;
+    }
+    .container-square .square:nth-child(3) .contant button:hover:after 
+    {
+        background: rgb(83, 0, 63,1);
+        transform: scaleX(5);
+    }
+    .container-square .square:nth-child(1) span
+    {
+        border:2px solid rgba(0,0,0,0);
+    }
+    .container-square .square span:nth-child(1)
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 38% 62% 63% 37% /41% 45% 56% 59%;
+        transition: 0.5s;
+        animation: roundd1 6s linear infinite;
+    }
+    .container-square .square:nth-child(1):hover span:nth-child(1)
+    {
+        background: #0044ff;
+        border:2px solid #0044ff;
+    }
+    .container-square .square span:nth-child(2)
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 38% 62% 63% 37% /41% 45% 56% 59%;
+        transition: 0.5s;
+        animation: roundd 4s linear infinite;
+    }
+    .container-square .square:hover span:nth-child(2)
+    {
+        background: #0044ff;
+        border:2px solid #0044ff;
+    }
+
+    .container-square .square span:nth-child(3)
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 38% 62% 63% 37% /41% 45% 56% 59%;
+        transition: 0.5s;
+        animation: roundd 10s linear infinite;
+    }
+    .container-square .square:hover span:nth-child(3)
+    {
+        background: #0044ff;
+        border:2px solid #0044ff;
+    }
+    @keyframes roundd1
+    {
+        0%
+        {
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes roundd
+    {
+        0%
+        {
+            transform: rotate(360deg);
+        }
+        100%
+        {
+            transform: rotate(0%);
+        }
+    }
+    .container-square .square:nth-child(2):hover span
+    {
+        background: rgb(238, 5, 83);
+        border: 2px solid rgb(238, 5, 83) ;
+    }
+    .container-square .square:nth-child(3):hover span
+    {
+        background: rgb(199, 5, 238);
+        border: 2px solid rgb(199, 5, 238) ;
+    }
+    .banner .img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(6.jpg);
+        background-position: center;
+        background-size: cover;
+        opacity: 0.25;
+        animation: slider 30s ease-in-out infinite;
+        animation-delay:4s ;
+    }
+}
+@media only screen and (max-width:640px)
+{
+    .banner .img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(6.jpg);
+        background-position: center;
+        background-size: cover;
+        opacity: 0.25;
+        animation: slider 30s ease-in-out infinite;
+        animation-delay:4s ;
+    }
+    section
+    {
+        background:linear-gradient(-45deg,#23a6d5,#23a6d5,#45a38b,#bff2e5);
+        background-size: 400%,400%;
+        animation: gradient 6s ease-in-out infinite;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @keyframes gradient {
+        0%
+        {
+            background-position:0 50%;
+        }
+        50%
+        {
+            background-position: 100% 50%;
+        }
+        100%
+        {
+            background-position: 0 50%;
+        }
+    }
+    .container-square .square 
+    {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        width: 350px;
+    }
+    .container-square .square .contant
+    {
+        position: relative;
+        padding: 30px 40px;
+        color: #fff;
+        text-align: center;
+        transition: 0.5;
+        z-index: 10;
+    }
+    .container-square .square .contant button
+    {
+        position: relative;
+        display: inline-block;
+        margin-top: 10px;
+        border: 2px solid #fff;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: #fff;
+    }
+    .container-square .square span
+    {
+        border:2px solid rgba(0,0,0,0);
+    }
+    .container-square .square span:nth-child(1)
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 38% 62% 63% 37% /41% 45% 56% 59%;
+        transition: 0.5s;
+        animation: roundd1 6s linear infinite;
+    }
+    .container-square .square:nth-child(1):hover span:nth-child(1)
+    {
+        background: #0044ff;
+        border:2px solid #0044ff;
+    }
+    .container-square .square span:nth-child(2)
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 38% 62% 63% 37% /41% 45% 56% 59%;
+        transition: 0.5s;
+        animation: roundd 4s linear infinite;
+    }
+    .container-square .square:hover span:nth-child(2)
+    {
+        background: #0044ff;
+        border:2px solid #0044ff;
+    }
+
+    .container-square .square span:nth-child(3)
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 38% 62% 63% 37% /41% 45% 56% 59%;
+        transition: 0.5s;
+        animation: roundd 10s linear infinite;
+    }
+    .container-square .square:hover span:nth-child(3)
+    {
+        background: #0044ff;
+        border:2px solid #0044ff;
+    }
+    @keyframes roundd1
+    {
+        0%
+        {
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes roundd
+    {
+        0%
+        {
+            transform: rotate(360deg);
+        }
+        100%
+        {
+            transform: rotate(0%);
+        }
+    }
+    .container-square .square:nth-child(2):hover span
+    {
+        background: rgb(238, 5, 83);
+        border: 2px solid rgb(238, 5, 83) ;
+    }
+    .container-square .square:nth-child(3):hover span
+    {
+        background: rgb(199, 5, 238);
+        border: 2px solid rgb(199, 5, 238) ;
+    }
+}

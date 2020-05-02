@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="swiper.min.js"></script>
+</head>
+<style>
+    .swiper-slide
+    {
+        width: 400px;
+    }
+    .darkmode-toggle
+    {
+        z-index: 100000000;
+    }
+</style>
+<body>
+        <div class="banner">
+            <header>
+                <a href="#" class="logo">12A4 da best</a>
+                <div class="toggle"></div>
+            </header>
+            <div class="img"></div>
+            <div class="cont">
+                <h2>12A4's <span>Diary</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste perspiciatis nisi tenetur tempora at odio dignissimos dolore suscipit accusantium? Amet accusamus hic eligendi facilis placeat obcaecati, fuga laboriosam reiciendis veritatis!</p>
+            </div>
+        </div> 
+        <section  style="overflow: hidden;">
+            <br><br>
+            <div id = "container-tron">
+                <div class="container-square" >
+                    <div class="square">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="contant">
+                            <h2>10A4</h2>
+                            <p>Lần đầu được gặp người mẹ trẻ và những người anh em</p>
+                            <button onclick="myFunction()"> Read More</button>
+                            </div>
+                    </div>
+                    <div class="square">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="contant">
+                            <h2>11A4</h2>
+                            <p>Khoảng thời gian tuyệt vời nhất của cấp 3</p>
+                            <button>Read More</button>
+                            </div>
+                    </div>
+                    <div class="square">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="contant">
+                            <h2>12A4</h2>
+                            <p>Mãi bên nhau bạn nhớ</p>
+                            <button>Read More</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="none" id="DOM">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At facilis impedit rem quae sed ipsam mollitia dignissimos minima similique error deleniti, natus numquam rerum aliquid nobis corrupti nemo, vel assumenda?</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At facilis impedit rem quae sed ipsam mollitia dignissimos minima similique error deleniti, natus numquam rerum aliquid nobis corrupti nemo, vel assumenda?</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                            </div>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At facilis impedit rem quae sed ipsam mollitia dignissimos minima similique error deleniti, natus numquam rerum aliquid nobis corrupti nemo, vel assumenda?</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At facilis impedit rem quae sed ipsam mollitia dignissimos minima similique error deleniti, natus numquam rerum aliquid nobis corrupti nemo, vel assumenda?</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back()" style="width: 100px; height: 50px;">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lần đầu được gặp mọi người, trông ai cũng đẹp trai xinh gái. Trừ thằng này</p>
+                                <img style="width: 70px ; height: 70px; animation:move 10s linear infinite" src="sau.png" alt="">
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At facilis impedit rem quae sed ipsam mollitia dignissimos minima similique error deleniti, natus numquam rerum aliquid nobis corrupti nemo, vel assumenda?</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        
+        <script>
+            var DOM = document.getElementById('DOM')
+            var containertron = document.getElementById('container-tron')
+        function myFunction()
+        {
+            DOM.classList.remove('none')
+            DOM.classList.add('swiper-containerr')
+            containertron.classList.add('none')
+            var swiper = new Swiper('.swiper-containerr', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            });
+        }
+        function back()
+        {
+            DOM.classList.add('none')
+            DOM.classList.remove('swiper-containerr')
+            containertron.classList.remove('none')
+        }
+
+        const options = 
+        {
+            bottom: '64px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.5s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: false, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget()
+        </script>
+</body>
+</html>
