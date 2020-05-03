@@ -1,0 +1,218 @@
+.bigFam
+{
+    width: 100%;
+    position: relative;
+    height: 400px;
+    bottom: 0%;
+}
+.bigFam .family:nth-child(1)
+{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0%;
+    left: 20%;
+    background: transparent;
+    border: 10px solid transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 3s;
+    box-shadow: none;
+    font-size: 60px;
+}
+.bigFam .family button
+{
+    background: none;
+        color: #000;
+        transition: .6s;
+        height: 40px;
+        width: 150px;
+        border: 1px solid ;
+        font-size: 18px;
+        border-radius: 4px;
+        overflow: hidden;
+        border-radius: 40px;
+}
+.bigFam .family button:hover
+{
+    background: #ccc;
+    box-shadow: 0 15px 20px;
+}
+.bigFam .family:nth-child(1):before 
+{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 80%;
+    background: #001aff;
+    left: 40px;
+    top: 10%;
+    transition: 1s;
+    opacity: 1;
+    animation-delay: 1s ;
+    z-index: -1;
+    box-shadow: 0 15px 20px;
+}
+.bigFam .family:nth-child(1):hover:before
+{
+    left: -50px;
+    box-shadow: 0 15px 20px;
+    opacity: 1;
+    z-index: 1;
+} 
+.bigFam .family:nth-child(1):hover:after
+{
+    right: -50px;
+    box-shadow: 0 15px 20px;
+    opacity: 1;
+    z-index: 1;
+}
+.bigFam .family:nth-child(1):hover .shape
+{
+    border-radius: 0;
+    z-index: 2;
+    box-shadow: 0 15px 20px;
+    transform: rotate(405deg);
+    background: #fff;
+    border-color: #001aff;
+}
+.bigFam .family:nth-child(1):hover
+{
+    background: #fff;
+    box-shadow: 0 15px 20px;
+    border: 15px solid #001aff;
+}
+.bigFam .family:nth-child(1):after
+{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 80%;
+    background: #001aff;
+    right: 40px;
+    top: 10%;
+    transition: 1s;
+    opacity: 1;
+    animation-delay: 1s ;
+    z-index: -1;
+}
+.bigFam .family:nth-child(2)
+{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0%;
+    right: 15%;
+    background: transparent;
+    border: 10px solid transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 3s;
+    box-shadow: none;
+    font-size: 60px;
+}
+.bigFam .family:nth-child(1) .shape
+{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    border: 10px solid transparent;
+    border-radius: 50%;
+    transition: 2s;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.bigFam .family:nth-child(1) .shape p
+{
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    position: absolute;
+    top: 23%;
+    right:10%;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+.bigFam .family:nth-child(2) .shape
+{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    border: 10px solid transparent;
+    border-radius: 50%;
+    transition: 3s;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.bigFam .family:nth-child(2) .shape p
+{
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    position: absolute;
+    top: 23%;
+    right: 0%;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+.bigFam .family:nth-child(2):hover:before
+{
+    left: -50px;
+    opacity: 1;
+    z-index: 1;
+    box-shadow: 0 15px 20px;
+} 
+.bigFam .family:nth-child(2):hover:after
+{
+    right: -50px;
+    opacity: 1;
+    z-index: 1;
+    box-shadow: 0 15px 20px;
+}
+.bigFam .family:nth-child(2):hover .shape
+{
+    border-radius: 0;
+    z-index: 2;
+    transform: rotate(-315deg);
+    border-color: #ff0077;
+    background: #fff;
+    box-shadow: 0 15px 20px;
+}
+.bigFam .family:nth-child(2):hover
+{
+    background: #fff;
+    box-shadow: 0 15px 20px;
+    border: 15px solid #ff0077;
+}
+.bigFam .family:nth-child(2):before 
+{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 80%;
+    background: #ff0077;
+    left: 40px;
+    top: 10%;
+    transition: 1s;
+    opacity: 1;
+    animation-delay: 1s ;
+    z-index: -1;
+}
+.bigFam .family:nth-child(2):after
+{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 80%;
+    background: #ff0077;
+    right: 40px;
+    top: 10%;
+    transition: 1s;
+    opacity: 1;
+    animation-delay: 1s ;
+    z-index: -1;
+}
