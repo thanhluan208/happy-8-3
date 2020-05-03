@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="swiper.min.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="bigFam.css">
+    <link rel="stylesheet" href="cube.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <script src="swiper.min.js"></script>
+ 
 </head>
 <style>
     .swiper-slide
     {
-        width: 400px;
+        width: 1500px;
     }
+    
     .darkmode-toggle
     {
         z-index: 100000000;
@@ -29,21 +34,22 @@
             </header>
             <div class="img"></div>
             <div class="cont">
-                <h2>12A4's <span>Diary</span></h2>
+                <h2>12A4's <span>Fairy Tails</span></h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste perspiciatis nisi tenetur tempora at odio dignissimos dolore suscipit accusantium? Amet accusamus hic eligendi facilis placeat obcaecati, fuga laboriosam reiciendis veritatis!</p>
             </div>
         </div> 
-        <section>
+        <section id="long" >
             <br><br>
-            <div id = "container-tron"  style="overflow: hidden;">
-                <div class="container-square"  >
+            <div id = "container-tron" style="overflow: hidden;">
+                <br><br>
+                <div class="container-square" >
                     <div class="square">
                         <span></span>
                         <span></span>
                         <span></span>
                         <div class="contant">
-                            <h2>10A4</h2>
-                            <p>Lần đầu được gặp người mẹ trẻ và những người anh em</p>
+                            <h2 style="font-family: 'Dancing Script', cursive;">Chapter1: 10a4</h2>
+                            <p style="font-size: 30px;">First time of everything</p>
                             <button onclick="myFunction()"> Read More</button>
                             </div>
                     </div>
@@ -52,9 +58,9 @@
                         <span></span>
                         <span></span>
                         <div class="contant">
-                            <h2>11A4</h2>
-                            <p>Khoảng thời gian tuyệt vời nhất của cấp 3</p>
-                            <button>Read More</button>
+                            <h2 style="font-family: 'Dancing Script', cursive;">Chapter2: 11a4</h2>
+                            <p style="font-size: 30px;">The best moment</p>
+                            <button onclick="myFunction1()">Read More</button>
                             </div>
                     </div>
                     <div class="square">
@@ -62,15 +68,32 @@
                         <span></span>
                         <span></span>
                         <div class="contant">
-                            <h2>12A4</h2>
-                            <p>Mãi bên nhau bạn nhớ</p>
-                            <button>Read More</button>
+                            <h2 style="font-family: 'Dancing Script', cursive;">Chapter3: 12a4</h2>
+                            <p style="font-size: 30px;">See you guys soon</p>
+                            <button onclick="myFunction2()">Read More</button>
                             </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="bigFam" id="Family">
+                <div class="family">
+                    <div class="shape">
+                        <p> Prince</p>
+                        <img style="position: absolute; transform: rotate(-45deg) scale(2.5); top: 15%;right: 73%;" src="king.png" alt="">
+                        <button style="transform: rotate(-45deg); position:absolute;bottom: 20% ;left:38%;" onclick="myFunction4()"> Read More</button>
+                    </div>
+                </div>
+                <div class="family">
+                    <div class="shape">
+                        <p> Princess</p>
+                        <img style="position: absolute; transform: rotate(-45deg) scale(2.5);top: 15%;right: 73%;" src="queen.png" alt="">
+                        <button style="transform: rotate(-45deg); position:absolute;bottom: 20%; left:38%;" onclick="myFunction4()"> Read More</button>
                     </div>
                 </div>
             </div>
             <br><br>
-            <div class="none" id="DOM"  style="overflow: hidden;">
+            <div class="none" id="DOM" style="overflow: hidden;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card">
@@ -155,18 +178,341 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="none" id="dom" style="overflow: hidden;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lần đầu đá bóng cùng những "thần đồng",tuy chỉ vô địch trong lòng người hâm mộ nhưng vẫn là kỉ niệm đáng nhớ <br> Xin lỗi vì đã chửi ae 😢😢😢</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back1()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p> Lần đầu đón khai giảng cùng cả nhà tại Yên Hòa 🏫.Ai cũng đẹp, mình thì như thằng sida 🥴🥴🥴</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back1()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                            </div>
+                            <div class="content">
+                                <p>Lần đầu được tắm mưa cùng anh em, áo ướt quật lằn cả người, sàn trơn ngã dập cả mặt những vẫn là vui 😎🤘👊</p>
+                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; left: 40%;" src="support.png" alt="">
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back1()" style="width: 100px; height: 50px;position: absolute;bottom: 1%;">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lần đầu được tổ chức 20/10 cho chị em, tuy chưa được hoàn hảo nhưng vẫn cứ là tuyệt vời 😍😍😍😍</p>
+                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; right: 0;" src="gift2.png" alt="">
+                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; left: 40%;" src="gift.png" alt="">
+                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; left: 0;" src="love1.png" alt="">
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back1()" style="width: 100px; height: 50px; position: absolute;bottom: 1%;">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lần đầu được gặp mọi người, trông ai cũng đẹp trai xinh gái. Trừ thằng này</p>
+                                <img style="width: 70px ; height: 70px; animation:move 10s linear infinite" src="sau.png" alt="">
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back1()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At facilis impedit rem quae sed ipsam mollitia dignissimos minima similique error deleniti, natus numquam rerum aliquid nobis corrupti nemo, vel assumenda?</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back1()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div> 
+            <div class="none" id="dOm" style="overflow: hidden;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lần đầu đá bóng cùng những "thần đồng",tuy chỉ vô địch trong lòng người hâm mộ nhưng vẫn là kỉ niệm đáng nhớ <br> Xin lỗi vì đã chửi ae 😢😢😢</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back2()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p> Lần đầu đón khai giảng cùng cả nhà tại Yên Hòa 🏫.Ai cũng đẹp, mình thì như thằng sida 🥴🥴🥴</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back2()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                            </div>
+                            <div class="content">
+                                <p>Lần đầu được tắm mưa cùng anh em, áo ướt quật lằn cả người, sàn trơn ngã dập cả mặt những vẫn là vui 😎🤘👊</p>
+                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; left: 40%;" src="support.png" alt="">
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back2()" style="width: 100px; height: 50px;position: absolute;bottom: 1%;">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lần đầu được tổ chức 20/10 cho chị em, tuy chưa được hoàn hảo nhưng vẫn cứ là tuyệt vời 😍😍😍😍</p>
+                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; right: 0;" src="gift2.png" alt="">
+                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; left: 40%;" src="gift.png" alt="">
+                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; left: 0;" src="love1.png" alt="">
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back2()" style="width: 100px; height: 50px; position: absolute;bottom: 1%;">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lần đầu được gặp mọi người, trông ai cũng đẹp trai xinh gái. Trừ thằng này</p>
+                                <img style="width: 70px ; height: 70px; animation:move 10s linear infinite" src="sau.png" alt="">
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back2()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                
+                            </div>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At facilis impedit rem quae sed ipsam mollitia dignissimos minima similique error deleniti, natus numquam rerum aliquid nobis corrupti nemo, vel assumenda?</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back2()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="none" id="DOm" style="overflow: hidden;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card" style="background: transparent;box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
+                        20px 20px 20px rgba(0, 0, 0, 0.1); border-top: 5px solid rgba(255, 255, 255, 0.4) ;border-bottom: 5px solid rgba(255, 255, 255, 0.4) ;">
+                            <div class="cube">
+                                <div class="small-cube">
+                                    <img src="manh1.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh2.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh3.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh4.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh5.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh6.jpg" alt="">
+                                </div>
+                            </div>
+                            <h2 style="position: absolute;left:10%;bottom: 25%; font-size: 30px; color: #333;">Bạn Mạnh con chú Hùng</h2>
+                            <div style="position: relative;left:25%;bottom: -72%;">
+                                <a class="a" href="https://www.facebook.com/profile.php?id=100032815311578">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a class="a" href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="a" href="" >
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center; position: absolute;bottom:1%;left: 37%;">
+                                <button onclick="back4()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card" style="background: transparent;box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
+                        20px 20px 20px rgba(0, 0, 0, 0.1); border-top: 5px solid rgba(255, 255, 255, 0.4) ;border-bottom: 5px solid rgba(255, 255, 255, 0.4) ;">
+                            <div class="cube">
+                                <div class="small-cube">
+                                    <img src="six1.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="six2.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="six3.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="six4.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="six5.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="six6.jpg" alt="">
+                                </div>
+                            </div>
+                            <h2 style="position: absolute;left:10%;bottom: 25%; font-size: 30px; color: #333;">Bạn Thanh con chú Chiến</h2>
+                            <div style="position: relative;left:25%;bottom: -72%;">
+                                <a class="a" href="https://www.facebook.com/congthanh2813">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a class="a" href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="a" href="" >
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center; position: absolute;bottom:1%;left: 37%;">
+                                <button onclick="back4()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card" style="background: transparent;box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
+                        20px 20px 20px rgba(0, 0, 0, 0.1); border-top: 5px solid rgba(255, 255, 255, 0.4) ;border-bottom: 5px solid rgba(255, 255, 255, 0.4) ;">
+                            <div class="cube">
+                                <div class="small-cube">
+                                    <img src="manh1.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh2.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh3.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh4.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh5.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh6.jpg" alt="">
+                                </div>
+                            </div>
+                            <h2 style="position: absolute;left:30%;bottom: 24%; font-size: 35px; color: #333;">Mạnh múp</h2>
+                            
+                            <div style="display: flex;justify-content: center;align-items: center; position: absolute;bottom:1%;left: 37%;">
+                                <button onclick="back4()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card" style="background: transparent;box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
+                        20px 20px 20px rgba(0, 0, 0, 0.1); border-top: 5px solid rgba(255, 255, 255, 0.4) ;border-bottom: 5px solid rgba(255, 255, 255, 0.4) ;">
+                            <div class="cube">
+                                <div class="small-cube">
+                                    <img src="manh1.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh2.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh3.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh4.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh5.jpg" alt="">
+                                </div>
+                                <div class="small-cube">
+                                    <img src="manh6.jpg" alt="">
+                                </div>
+                            </div>
+                            <h2 style="position: absolute;left:30%;bottom: 24%; font-size: 35px; color: #333;">Mạnh múp</h2>
+                            
+                            <div style="display: flex;justify-content: center;align-items: center; position: absolute;bottom:1%;left: 37%;">
+                                <button onclick="back4()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <script>
-            var DOM = document.getElementById('DOM')
+            var dom =  document.getElementById('dom')
+            var dOm = document.getElementById('dOm')
+            var DOM = document.getElementById("DOM")
+            var DOm = document.getElementById("DOm")
             var containertron = document.getElementById('container-tron')
+            var Family = document.getElementById('Family')
+            var long = document.getElementById('long')
         function myFunction()
         {
             DOM.classList.remove('none')
-            DOM.classList.add('swiper-containerr')
+            DOM.classList.add('swiper-container')
             containertron.classList.add('none')
-            var swiper = new Swiper('.swiper-containerr', {
+            Family.classList.add('none')
+            long.classList.add("Long")
+            var swiper = new Swiper('.swiper-container', {
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
@@ -186,9 +532,112 @@
         function back()
         {
             DOM.classList.add('none')
-            DOM.classList.remove('swiper-containerr')
+            DOM.classList.remove('swiper-container')
             containertron.classList.remove('none')
+            Family.classList.remove('none')
+            long.classList.remove('Long')
         }
+
+
+        function myFunction1()
+        {
+            dom.classList.remove('none')
+            dom.classList.add('swiper-containerr')
+            containertron.classList.add('none')
+            Family.classList.add('none')
+            long.classList.add("Long")
+            var swiper = new Swiper('.swiper-containerr', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            });
+        }
+        function back1()
+        {
+            dom.classList.add('none')
+            dom.classList.remove('swiper-containerr')
+            containertron.classList.remove('none')
+            Family.classList.remove('none')
+            long.classList.remove('Long')
+        }
+        
+        function myFunction2()
+        {
+            dOm.classList.remove('none')
+            dOm.classList.add('swiper-containerrr')
+            containertron.classList.add('none')
+            Family.classList.add('none')
+            long.classList.add("Long")
+            var swiper = new Swiper('.swiper-containerrr', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            });
+        }
+        function back2()
+        {
+            dOm.classList.add('none')
+            dOm.classList.remove('swiper-containerrr')
+            containertron.classList.remove('none')
+            Family.classList.remove('none')
+            long.classList.remove('Long')
+        }
+
+        function myFunction4()
+        {
+            DOm.classList.remove('none')
+            DOm.classList.add('swiper-containerrrr')
+            containertron.classList.add('none')
+            Family.classList.add('none')
+            long.classList.add("Long")
+            var swiper = new Swiper('.swiper-containerrrr', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            });
+        }
+        function back4()
+        {
+            DOm.classList.add('none')
+            DOm.classList.remove('swiper-containerrrr')
+            containertron.classList.remove('none')
+            Family.classList.remove('none')
+            long.classList.remove('Long')
+        }
+
 
         const options = 
         {
