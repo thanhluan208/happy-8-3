@@ -14,6 +14,10 @@ body
 {
     display: none;
 }
+.Long
+{
+    height: 700px;
+}
 .blur
 {
     background: rgba(0,0,0,0.2);
@@ -211,7 +215,7 @@ body
 {
     background-position: center;
     background-size: cover;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, #0004);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
 @keyframes move 
 {
