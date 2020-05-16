@@ -4,29 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
     <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
     <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="swiper.min.css">
     <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="bigFam.css">
     <link rel="stylesheet" href="cube.css">
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="stylesheet" href="storybook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <script src="swiper.min.js"></script>
- 
+    <link rel="stylesheet" href="tippy.css">
+    <script type="text/javascript" src="turn.min.js"></script>
 </head>
 <style>
     .swiper-slide
     {
-        width: 1500px;
+        width: 400px;
     }
-    
+    .swiper-conatinerrr
+    {
+        padding-bottom: 300px;
+    }
     .darkmode-toggle
     {
         z-index: 100000000;
     }
 </style>
 <body>
+    <div id="scrollPath"></div>
+    <div id="progressbar" style="height: 100% !important;"></div>
+    <div class="preloader" >
+        <div class="counter">0</div>
+        <div class="logo">
+            <div class="TL">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h3 class = "h3">The Creator</h3>
+        </div>
+    </div>
         <div class="banner">
             <header>
                 <a href="#" class="logo">12A4 da best</a>
@@ -38,7 +61,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste perspiciatis nisi tenetur tempora at odio dignissimos dolore suscipit accusantium? Amet accusamus hic eligendi facilis placeat obcaecati, fuga laboriosam reiciendis veritatis!</p>
             </div>
         </div> 
-        <section id="long" >
+        <section id="long" style="height: 1000px;">
             <br><br>
             <div id = "container-tron" style="overflow: hidden;">
                 <br><br>
@@ -269,11 +292,11 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="sliderText">
+                            <div class="sliderText" style="animation-delay: 1s;animation: khaigiang 40s linear infinite;position: relative;width: 100%;height: 200px;background-image: url(6.jpg);background-position: center;background-size: cover;">
                                 
                             </div>
                             <div class="content">
-                                <p>Lần đầu đá bóng cùng những "thần đồng",tuy chỉ vô địch trong lòng người hâm mộ nhưng vẫn là kỉ niệm đáng nhớ <br> Xin lỗi vì đã chửi ae 😢😢😢</p>
+                                <p style="font-size: 30px;">Buổi khai giảng cuối cùng rồi.Hãy bắt đầu năm học cuối cùng đáng nhớ nhé 🥰🥰</p>
                             </div>
                             <div style="display: flex;justify-content: center;align-items: center;">
                                 <button onclick="back2()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
@@ -282,11 +305,11 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="sliderText">
+                            <div class="sliderText" style="position: relative;width: 100%;height: 200px;background-image: url(11.jpg);background-position: center;background-size: cover; animation: backy 12s linear infinite">
                                 
                             </div>
                             <div class="content">
-                                <p> Lần đầu đón khai giảng cùng cả nhà tại Yên Hòa 🏫.Ai cũng đẹp, mình thì như thằng sida 🥴🥴🥴</p>
+                                <p style="font-size: 30px;"> Đến chia tay Backy đi du học mà đứa nào cũng cắm mặt vô ăn🥴. <br> Miss Backy so much </p>
                             </div>
                             <div style="display: flex;justify-content: center;align-items: center;">
                                 <button onclick="back2()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
@@ -295,11 +318,10 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="sliderText">
+                            <div class="sliderText" style="position: relative;width: 100%;height: 200px;background-image: url(12a4.jpg);background-position: center;background-size: cover;">
                             </div>
                             <div class="content">
-                                <p>Lần đầu được tắm mưa cùng anh em, áo ướt quật lằn cả người, sàn trơn ngã dập cả mặt những vẫn là vui 😎🤘👊</p>
-                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; left: 40%;" src="support.png" alt="">
+                                <p style="font-size: 30px;">Về Nhà Ăn Tết  🎤🎤🎶🎵 Buổi biểu diễn của cả lớp siêu siêu đỉnh, lại còn được đi biểu diễn trên quận ủy nữa. A4dabest</p>
                             </div>
                             <div style="display: flex;justify-content: center;align-items: center;">
                                 <button onclick="back2()" style="width: 100px; height: 50px;position: absolute;bottom: 1%;">Back</button>
@@ -308,14 +330,25 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="sliderText">
+                            <div class="sliderText" style="position: relative;width: 100%;height: 200px;background-image: url(18.jpg);background-position: center;background-size: cover;">
                                 
                             </div>
                             <div class="content">
-                                <p>Lần đầu được tổ chức 20/10 cho chị em, tuy chưa được hoàn hảo nhưng vẫn cứ là tuyệt vời 😍😍😍😍</p>
-                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; right: 0;" src="gift2.png" alt="">
-                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; left: 40%;" src="gift.png" alt="">
-                                <img style="width: 70px;height:70px; justify-self:center;position:absolute; left: 0;" src="love1.png" alt="">
+                                <p style="font-size: 28px; margin:0"><span style="font-family: none;">2N1D</span> tuyệt vời cùng cạ nhà ở Mai Châu. Được đi hết từ bản này đến bản khác, cùng nhau quẩy xuyên màn đêm bên lửa trại <span style="font-family: none;">🔥🔥🔥</span>,tham gia đủ mọi trò chơi vì quá fairplay nên ta đã vô địch trong lòng người hâm mộ</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back2()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText"style="position: relative;width: 100%;height: 200px;background-image: url(brother.jpg);background-position: center;background-size: cover;">
+                                
+                            </div>
+                            <div class="content">
+                                <p style="font-size: 30px;">Dàn nam thần của 12A4😍😍 <br><span style="font-size: 34px;text-align: center;">"The crest and crowning of all<br> good life's final star is <br> <span style="font-weight: bold;">Brotherhood</span> "</span></p>
+                                
                             </div>
                             <div style="display: flex;justify-content: center;align-items: center;">
                                 <button onclick="back2()" style="width: 100px; height: 50px; position: absolute;bottom: 1%;">Back</button>
@@ -324,12 +357,11 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="sliderText">
+                            <div class="sliderText"style="position: relative;width: 100%;height: 200px;background-image: url(14.jpg);background-position: center;background-size: cover;">
                                 
                             </div>
                             <div class="content">
-                                <p>Lần đầu được gặp mọi người, trông ai cũng đẹp trai xinh gái. Trừ thằng này</p>
-                                <img style="width: 70px ; height: 70px; animation:move 10s linear infinite" src="sau.png" alt="">
+                                <p style="font-size:35px;margin: 1px;">Bữa tất niên tràn ngập bài tập toán lí hóa  📖🍽📚.... <br> Và sau đó là go go rush B 15-15</p>
                             </div>
                             <div style="display: flex;justify-content: center;align-items: center;">
                                 <button onclick="back2()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
@@ -338,11 +370,37 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="sliderText">
+                            <div class="sliderText" style="position: relative;width: 100%;height: 200px;background-image: url(20.jpg);background-position: center;background-size: cover;">
                                 
                             </div>
                             <div class="content">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At facilis impedit rem quae sed ipsam mollitia dignissimos minima similique error deleniti, natus numquam rerum aliquid nobis corrupti nemo, vel assumenda?</p>
+                                <p style="font-size: 30px;margin:2px"><span style="font-family: none;">GGWP</span> Quang Linh 🐃 <span style="font-family: none;">&</span>  Nguyễn My, giải nhất là dễ 🥇🥇🥇</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back2()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText" style="position: relative;width: 100%;height: 200px;background-image: url(21.jpg);background-position: center;background-size: cover;">
+                                
+                            </div>
+                            <div class="content">
+                                <p style="font-size: 35px;">Ngọc đi du học mất rồi.Lớp chỉ còn có 31 thành viên thôi 😭😭</p>
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <button onclick="back2()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText" style="position: relative;width: 100%;height: 200px;background-image: url(22.jpg);background-position: center;background-size: cover;">
+                                
+                            </div>
+                            <div class="content">
+                                <p style="font-size: 35px;margin:2px">Lần thứ 3 được tổ chức 20/10,rất rất zui vì cô và các bạn nữ đã thích món quà của bọn tui</p>
                             </div>
                             <div style="display: flex;justify-content: center;align-items: center;">
                                 <button onclick="back2()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
@@ -351,152 +409,223 @@
                     </div>
                 </div>
             </div> 
-            <div class="none" id="DOm" style="overflow: hidden;">
+            <div class="none" id="DOm" class="hihi" style="overflow: hidden;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="card" style="background: transparent;box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
-                        20px 20px 20px rgba(0, 0, 0, 0.1); border-top: 5px solid rgba(255, 255, 255, 0.4) ;border-bottom: 5px solid rgba(255, 255, 255, 0.4) ;">
-                            <div class="cube">
-                                <div class="small-cube">
-                                    <img src="manh1.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh2.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh3.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh4.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh5.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh6.jpg" alt="">
-                                </div>
-                            </div>
-                            <h2 style="position: absolute;left:10%;bottom: 25%; font-size: 30px; color: #333;">Bạn Mạnh con chú Hùng</h2>
-                            <div style="position: relative;left:25%;bottom: -72%;">
-                                <a class="a" href="https://www.facebook.com/profile.php?id=100032815311578">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                                <a class="a" href="">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a class="a" href="" >
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </div>
+                        <div class="card" style="background-image: url(manh1.jpg);background-position: center;background-size: cover; width: 400px;height: 450px;">
                             <div style="display: flex;justify-content: center;align-items: center; position: absolute;bottom:1%;left: 37%;">
-                                <button onclick="back4()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                                <button onclick="back4()" style="width: 100px; height: 50px;">Back</button>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="card" style="background: transparent;box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
-                        20px 20px 20px rgba(0, 0, 0, 0.1); border-top: 5px solid rgba(255, 255, 255, 0.4) ;border-bottom: 5px solid rgba(255, 255, 255, 0.4) ;">
-                            <div class="cube">
-                                <div class="small-cube">
-                                    <img src="six1.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="six2.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="six3.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="six4.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="six5.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="six6.jpg" alt="">
-                                </div>
-                            </div>
-                            <h2 style="position: absolute;left:10%;bottom: 25%; font-size: 30px; color: #333;">Bạn Thanh con chú Chiến</h2>
-                            <div style="position: relative;left:25%;bottom: -72%;">
-                                <a class="a" href="https://www.facebook.com/congthanh2813">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                                <a class="a" href="">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a class="a" href="" >
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </div>
+                        <div class="card" style="background-image: url(six6.jpg);background-position: center;background-size: cover;width: 400px;height: 450px;">
                             <div style="display: flex;justify-content: center;align-items: center; position: absolute;bottom:1%;left: 37%;">
-                                <button onclick="back4()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                                <button onclick="back4()" style="width: 100px; height: 50px;">Back</button>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="card" style="background: transparent;box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
-                        20px 20px 20px rgba(0, 0, 0, 0.1); border-top: 5px solid rgba(255, 255, 255, 0.4) ;border-bottom: 5px solid rgba(255, 255, 255, 0.4) ;">
-                            <div class="cube">
-                                <div class="small-cube">
-                                    <img src="manh1.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh2.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh3.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh4.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh5.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh6.jpg" alt="">
-                                </div>
-                            </div>
-                            <h2 style="position: absolute;left:30%;bottom: 24%; font-size: 35px; color: #333;">Mạnh múp</h2>
-                            
+                        <div class="card" style="background-image: url(hien.jpg);background-position: center;background-size: cover;width: 400px;height: 450px;">
                             <div style="display: flex;justify-content: center;align-items: center; position: absolute;bottom:1%;left: 37%;">
-                                <button onclick="back4()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                                <button onclick="back4()" style="width: 100px; height: 50px;">Back</button>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="card" style="background: transparent;box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
-                        20px 20px 20px rgba(0, 0, 0, 0.1); border-top: 5px solid rgba(255, 255, 255, 0.4) ;border-bottom: 5px solid rgba(255, 255, 255, 0.4) ;">
-                            <div class="cube">
-                                <div class="small-cube">
-                                    <img src="manh1.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh2.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh3.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh4.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh5.jpg" alt="">
-                                </div>
-                                <div class="small-cube">
-                                    <img src="manh6.jpg" alt="">
-                                </div>
-                            </div>
-                            <h2 style="position: absolute;left:30%;bottom: 24%; font-size: 35px; color: #333;">Mạnh múp</h2>
-                            
+                        <div class="card" style="background-image: url(thanhluan.jpg);background-position: center;background-size: cover;width: 400px;height: 450px;">
                             <div style="display: flex;justify-content: center;align-items: center; position: absolute;bottom:1%;left: 37%;">
-                                <button onclick="back4()" style="width: 100px; height: 50px;-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);">Back</button>
+                                <button onclick="back4()" style="width: 100px; height: 50px;">Back</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+        <section class="section3" style="height: 800px; display: flex;justify-content: center;align-items: center;">
+            <div class="storybook" id="book" style="left: -5px;">
+                <div class="storybook-page hard" style="position: absolute;background: #333;height: 700px;" data-tippy-content = "Our Storybook, Open It!!!">
+                    <p style="font-family: 'Lobster', cursive;text-align: center; font-size:70px;border:1px solid gray;color: rgb(191, 71, 238);position: relative;top: -3%;">Young Horse Wanna Chien</p>
+                    <div style="background-image: url(35.jpg);background-position: center;background-size: cover;height: 520px;width:750px;position: relative;bottom: 7%;"></div>  
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont1"></div>
+                        <div class="imgCont1"></div>
+                        <div class="imgCont1"></div>
+                    </div>  
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont2"></div>
+                        <div class="imgCont2"></div>
+                        <div class="imgCont2"></div>
+                    </div>    
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont3"></div>
+                        <div class="imgCont3"></div>
+                        <div class="imgCont3"></div>
+                    </div>    
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage1">
+                        <div class="imgCont4"></div>
+                        <div class="imgCont4"></div>
+                        <div class="imgCont4"></div>
+                        <div class="imgCont4"></div>
+                    </div>    
+                </div>
+                <div class="storybook-pages">
+                    <div style="display: flex;justify-content: center; align-items: center;">
+                        <div style="background-image: url(1.jpg);background-position: center;background-size: cover;height: 500px;width: 800px;position: relative;"></div>
+                    </div>    
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont5"></div>
+                        <div class="imgCont5"></div>
+                    </div>    
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont6"></div>
+                        <div class="imgCont6"></div>
+                        <div class="imgCont6"></div>
+                    </div>  
+                </div>
+                <div class="storybook-pages">
+                    <div style="display: flex;justify-content: center; align-items: center;">
+                        <div style="background-image: url(48.jpg);background-position: center;background-size: cover;height: 500px;width: 800px;position: relative;"></div>
+                    </div>    
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont7"></div>
+                        <div class="imgCont7"></div>
+                        <div class="imgCont7"></div>
+                        <div class="imgCont7"></div>
+                    </div>  
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont8"></div>
+                        <div class="imgCont8"></div>
+                    </div>    
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont9"></div>
+                        <div class="imgCont9"></div>
+                        <div class="imgCont9"></div>
+                    </div>  
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont10"></div>
+                        <div class="imgCont10"></div>
+                        <div class="imgCont10"></div>
+                    </div>  
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont11"></div>
+                        <div class="imgCont11"></div>
+                        <div class="imgCont11"></div>
+                    </div>  
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont12"></div>
+                        <div class="imgCont12"></div>
+                    </div>    
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont13"></div>
+                        <div class="imgCont13"></div>
+                        <div class="imgCont13"></div>
+                    </div>  
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont14"></div>
+                        <div class="imgCont14"></div>
+                    </div>    
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont15"></div>
+                        <div class="imgCont15"></div>
+                        <div class="imgCont15"></div>
+                    </div>  
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont16"></div>
+                        <div class="imgCont16"></div>
+                    </div>    
+                </div>
+                <div class="storybook-pages">
+                    <div class="imgStorage">
+                        <div class="imgCont17"></div>
+                        <div class="imgCont17"></div>
+                        <div class="imgCont17"></div>
+                    </div>  
+                </div>
+                <div class="storybook-pages">
+                    <div style="display: flex;justify-content: center; align-items: center;">
+                        <div style="background-image: url(6.jpg);background-position: center;background-size: cover;height: 500px;width: 800px;position: relative;"></div>
+                    </div> 
+                </div>
+                <div class="hard BackBook" style="background-image: url(BackBook.jpg);background-position: center;background-size: cover;display: flex;justify-content: center;align-items: center;" data-tippy-content="Mai ben nhau ban nho">
+                   <div class="box" style="position: relative;display: flex;justify-content: center;align-items: center;">
+                    <p>We may not related, we may never see each other again.But once FAMILY always FAMILY.🏡🏡🏡</p>
+                   </div>
+                </div>
+
+        </section>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script>
+            tippy('.hard', 
+            {
+                
+                maxWidth: 300,
+                positon:top,
+                theme : 'tomato',
+                size: "medium",
+                inertia: true,
+                duration: 700,
+                hideOnClick: true,
+                followCursor: true
+            })
+        </script>
+        <script type="text/javascript">
+            function counter(){
+                var count = setInterval(function(){
+                    var c = parseInt($('.counter').text());
+                    $('.counter').text((++c).toString());
+                    if (c == 100)
+                    {
+                        clearInterval(count);
+                        $('.counter').addClass('hide');
+                        $('.preloader').addClass('active')
+                        $('.body').addClass('gradient')
+                $('.h3').addClass('none')
+                    }
+                },40)                            
+            }
+            counter()
+            // let progress = document.getElementById('progressbar');
+            // let totalHeight = document.body.scrollHeight - window.innerHeight;
+            // window.onscroll = function(){
+            //     let progressHeight = (window.pageYOffset /totalHeight) * 100;
+            //     progress.style.height = progressHeight + '%';
+            // }
+            
+        </script>
         <script>
             var dom =  document.getElementById('dom')
             var dOm = document.getElementById('dOm')
@@ -607,25 +736,27 @@
 
         function myFunction4()
         {
-            DOm.classList.remove('none')
-            DOm.classList.add('swiper-containerrrr')
-            containertron.classList.add('none')
-            Family.classList.add('none')
-            long.classList.add("Long")
+            DOm.classList.remove('none');
+            DOm.classList.add('swiper-containerrrr');
+            containertron.classList.add('none');
+            Family.classList.add('none');
+            long.classList.add("Long");
             var swiper = new Swiper('.swiper-containerrrr', {
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: 'auto',
             coverflowEffect: {
-                rotate: 50,
+                rotate: 20,
                 stretch: 0,
-                depth: 100,
+                depth: 200,
                 modifier: 1,
                 slideShadows : true,
             },
-            pagination: {
-                el: '.swiper-pagination',
+            loop: true,
+                autoplay : {
+                    delay:1500,
+                    disableOnInteraction: false,
             },
             });
         }
@@ -656,5 +787,15 @@
         const darkmode = new Darkmode(options);
         darkmode.showWidget()
         </script>
+        <script type="text/javascript">
+            $('#book').turn({
+                width : 1500,
+                height : 700,
+                page : 1,
+                autoCenter : true,
+                duration : 2000
+            })
+        </script>
+        
 </body>
 </html>
