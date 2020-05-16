@@ -5,10 +5,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #fff;
-    
-    /* overflow-y: scroll;
-    overflow-x: hidden; */
+    background: unset;
 }
 .none
 {
@@ -215,7 +212,6 @@ body
 {
     background-position: center;
     background-size: cover;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
 @keyframes move 
 {
@@ -231,4 +227,14 @@ body
     {
         transform: translate(10px,10px);
     }
+}
+.swiper-slide 
+{
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
+}
+#DOm
+{
+    position: relative;
+    top:12%;
+    padding-bottom: 300px;
 }
