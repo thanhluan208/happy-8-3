@@ -1,0 +1,10 @@
+.tippy-box[data-theme~='tomato'] {
+    background: tomato;
+    border: 1px solid yellow;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+.tippy-box[data-theme~='tomato'] > .tippy-arrow::before {
+    transform: scale(2);
+    border: 1px solid tomato;
+}
