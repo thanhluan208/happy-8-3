@@ -2,11 +2,11 @@
 {
     section
     {
-        background:linear-gradient(-45deg,#23a6d5,#23a6d5,#45a38b,#bff2e5);
+        background:linear-gradient(-45deg,rgba(250, 139, 149, 0.87),rgb(247, 101, 101),rgb(247, 88, 88),rgb(250, 73, 73));
         background-size: 400%,400%;
         animation: gradient 6s ease-in-out infinite;
         box-sizing: border-box;
-        height: 1000px;
+        height: 1300px;
 
     }
     @keyframes gradient {
@@ -306,12 +306,20 @@
 }
 @media only screen and (max-width:640px)
 {
+    #book
+    {
+        width: 1300px;
+    }
+    .banner
+    {
+        width: 1200px;
+    }
     .banner .img
     {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 1200px;
         height: 100%;
         background-image: url(6.jpg);
         background-position: center;
@@ -326,10 +334,10 @@
         background-size: 400%,400%;
         animation: gradient 6s ease-in-out infinite;
         box-sizing: border-box;
-        display: flex;
         justify-content: center;
         align-items: center;
         height: 1000px;
+        width: 1200px;
     }
     @keyframes gradient {
         0%
@@ -344,6 +352,13 @@
         {
             background-position: 0 50%;
         }
+    }
+    .container-square
+    {
+        display: grid;
+        grid-template-columns:repeat(auto-fill, minmax(300px,1fr));
+        grid-template-rows: minmax(50px,auto);
+        grid-gap: 10px;
     }
     .container-square .square 
     {
