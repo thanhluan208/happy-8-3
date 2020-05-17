@@ -78,7 +78,7 @@
     background-image: url(manh3.jpg);
     background-position: center;
     background-size: cover;
-    width: 300px;
+    width: 270px;
 }
 .imgStorage .imgCont3:nth-child(2)
 {
@@ -86,8 +86,8 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    right: 10%;
-    width: 400px;
+    right: 16%;
+    width: 370px;
 }
 .imgStorage .imgCont3:nth-child(3)
 {
@@ -95,8 +95,8 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    right: 10%;
-    width: 400px;
+    right: 16%;
+    width: 370px;
 }
 .imgStorage1
 {
