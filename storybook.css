@@ -13,7 +13,7 @@
 {
     position: relative;
         height: 600px;
-        width: 700px;
+        width: 670px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
         grid-template-rows: minmax(50px,auto);
@@ -39,7 +39,7 @@
 }
 .imgStorage .imgCont1:nth-child(3)
 {
-    background-image: url(14.jpg);
+    background-image: url(33.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -125,7 +125,7 @@
 }
 .imgStorage1 .imgCont4:nth-child(3)
 {
-    background-image: url(33.jpg);
+    background-image: url(14.jpg);
     background-position: center;
     background-size: cover;
     grid-column: span 2;
