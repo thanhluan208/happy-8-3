@@ -289,6 +289,8 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
                 </div>
             </div> 
             <div class="none" id="dOm" style="overflow: hidden;">
@@ -410,6 +412,8 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
                 </div>
             </div> 
         </section>
@@ -608,7 +612,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="cardy">
-                            <div class="fronty"style="background-image: url(DucMinh.jpg);background-position: center;background-size: cover;">
+                            <div class="fronty"style="background-image: url(Ducminh.jpg);background-position: center;background-size: cover;">
                             </div>
                             <div class="backy">
                                 <h2 style="text-align: center;">Duc minh<br> <Span>  The creator</Span></h2>
@@ -653,7 +657,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="cardy">
-                            <div class="fronty"style="background-image: url(LongKhanh.jpg);background-position: center;background-size: cover;">
+                            <div class="fronty"style="background-image: url(Longkhanh.jpg);background-position: center;background-size: cover;">
                             </div>
                             <div class="backy">
                                 <h2 style="text-align: center;">Long Khanh<br> <Span>  The creator</Span></h2>
@@ -797,7 +801,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="cardy">
-                            <div class="fronty"style="background-image: url(ThaoLy.jpg);background-position: center;background-size: cover;">
+                            <div class="fronty"style="background-image: url(Thaoly.jpg);background-position: center;background-size: cover;">
                             </div>
                             <div class="backy">
                                 <h2 style="text-align: center;">Thảo Ly<br> <Span>  The creator</Span></h2>
@@ -842,7 +846,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="cardy">
-                            <div class="fronty"style="background-image: url(vy.jpg);background-position: center;background-size: cover;">
+                            <div class="fronty"style="background-image: url(Vy.jpg);background-position: center;background-size: cover;">
                             </div>
                             <div class="backy">
                                 <h2 style="text-align: center;">Nguyễn Hà Vy<br> <Span>  The creator</Span></h2>
@@ -939,7 +943,7 @@
             containertron.classList.add('none')
             long.classList.add("Long")
             long.style.height = "1000px"
-            var swiper = new Swiper('.swiper-container', {
+            var swiper = new Swiper('.swiper-containerr', {
                     spaceBetween: 30,
                     effect: 'fade',
                     pagination: {
@@ -969,21 +973,17 @@
             long.classList.add("Long")
             long.style.height = "1000px"
             var swiper = new Swiper('.swiper-containerrr', {
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows : true,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            });
+                    spaceBetween: 30,
+                    effect: 'fade',
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
         }
         function back2()
         {
