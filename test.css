@@ -33,19 +33,33 @@ body
 {
     position: relative;
     background: #fff;
-    width: 400px;
-    height: 500px;
+    width: 800px;
+    height: 700px;
     margin: 0 auto;
 }
 .card .content
 {
-    width: 400px;
-    padding: 10px;
+    width: 100%;
     box-sizing: border-box;
     font-size: 24px;
     font-family: 'Dancing Script', cursive;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: minmax(50px,auto);
+    grid-gap: 20px;
 }  
+.card .content p
+{
+    font-size: 35px;
+    margin: 0;
+}
+.card button
+{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
 .swiper-slide:nth-child(1) .card .sliderText
 {
     position: relative;
@@ -215,13 +229,17 @@ body
 }
 @keyframes move 
 {
-    0%
+    25%
     {
-        transform: translate(10px,10px);
+        transform: translate(270px,10px);
     }
     50%
     {
-        transform: translate(270px,10px);
+        transform: translate(270px,160px);
+    }
+    75%
+    {
+        transform: translate(10px,160px);
     }
     100%
     {
