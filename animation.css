@@ -306,6 +306,18 @@
 }
 @media only screen and (max-width:640px)
 {
+    #fix1
+    {
+        width: 200px;height: 600px;
+    }
+    #fix2
+    {
+        right: -36%;width: 370px;height: 280px;top: -219%;
+    }
+    #fix3
+    {
+        right: -36%;width: 370px;height: 280px;bottom: 207%;
+    }
     #book
     {
         width: 1300px;
@@ -339,7 +351,7 @@
         height: 1000px;
         width: 1200px;
     }
-    @keyframes gradient {
+/*     @keyframes gradient {
         0%
         {
             background-position:0 50%;
@@ -352,7 +364,7 @@
         {
             background-position: 0 50%;
         }
-    }
+    } */
     .container-square
     {
         display: grid;
