@@ -344,7 +344,7 @@
     {
         background:linear-gradient(-45deg,#23a6d5,#23a6d5,#45a38b,#bff2e5);
         background-size: 400%,400%;
-        animation: gradient 6s ease-in-out infinite;
+        
         box-sizing: border-box;
         justify-content: center;
         align-items: center;
